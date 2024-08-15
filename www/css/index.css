@@ -96,149 +96,155 @@
   display: none;
 }
 
-a{
-    color: var(--verde);
-    font-weight: 600;
-    text-decoration: none;
+a {
+  color: var(--verde);
+  font-weight: 600;
+  text-decoration: none;
 }
 
-form{
-    padding-top: 10px;
-    background: var(--branco);
-    padding-bottom: 20px;
-    position: relative;
+form {
+  padding-top: 10px;
+  background: var(--branco);
+  padding-bottom: 20px;
+  position: relative;
 }
 
 input[type="text"] {
-    width: 90%;
-    height: 45px;
-    border-radius: 10px;
-    margin: auto;
-    padding: 10px 20px;
-    background: var(--gelo);
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px 20px;
+  background: var(--gelo);
 }
 
-::placeholder{
-    color: #b3afaf;
+::placeholder {
+  color: #b3afaf;
 }
 
 .icone-busca {
-    position: absolute;
-    top: 0px;
-    right: 5%;
-    font-size: 27px;
-    padding: 13px;
+  position: absolute;
+  top: 0px;
+  right: 5%;
+  font-size: 27px;
+  padding: 13px;
 }
 
 .page-content {
-    background: var(--branco);
+  background: var(--branco);
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .img-fluid {
-    max-width: 100%;
-  }
-  
-  .block {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+.img-fluid {
+  max-width: 100%;
+}
 
-  .filter-btn {
-    width: 100%;
-    height: 35px;
-    background: none;
-    border: 2px solid var(--preto);
-    border-radius: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+.block {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
-  .row {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+.filter-btn {
+  width: 100%;
+  height: 35px;
+  background: none;
+  border: 2px solid var(--preto);
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  .item {
-    color: var(--preto);
-  }
+.filter-btn.active {
+  background: var(--verde);
+  color: var(--branco);
+  border: none;
+}
 
+.row {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.item {
+  color: var(--preto);
+}
+
+.item-card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 240px;
+  flex: 45%;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  background: var(--gelo);
+}
+
+.img-container img {
+  max-width: 150px;
+  object-fit: cover;
+}
+
+.nome-rating {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.mdi-star {
+  color: orange;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.price {
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
   .item-card {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    height: 240px;
-    flex: 45%;
-    margin-right: 5px;
-    margin-bottom: 15px;
+    flex: 30%;
   }
+}
 
-  .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 180px;
-    border-radius: 10px;
-    background: var(--gelo);
+@media (min-width: 1200px) {
+  .item-card {
+    flex: 20%;
   }
-
-  .img-container img{
-    max-width: 150px;
-    object-fit: cover;
-  }
-
-  .nome-rating {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-  }
-
-  .color-gray {
-    color: gray;
-  }
-
-  .mdi-star {
-    color: orange;
-  }
-
-  .bold {
-    font-weight: 800;
-  }
-
-  .price {
-    font-size: 20px;
-  }
-
-  @media (min-width:992px) {
-    .item-card {
-      flex: 30%;
-    }
-  }
-
-  @media (min-width:1200px) {
-    .item-card {
-      flex: 20%;
-    }
-  }
+}
